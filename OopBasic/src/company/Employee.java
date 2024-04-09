@@ -21,6 +21,8 @@ public void report (int times) {
 	System.out.println(times+"回目の報告をします。役職："+position+"、名前："+name);
 	
 }
+
+
 //報告メソッド（オーバーロード）　メソッドは同じだけど、引数が異なる
 	public void report() {
 		report(1);
