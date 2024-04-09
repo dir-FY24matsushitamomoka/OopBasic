@@ -3,13 +3,9 @@ package company;
 public class ObjectSample {
 
 	public static void main(String[] args) {
-		 // インスタンスの作成
-        var employee = new Employee("鈴木", "営業部", "課長", 100);
+		var employee=new Employee("鈴木", "営業部","課長", 100);
+		employee.report();
+		employee.report(2);
 
-        // インスタンスメソッドの呼び出し
-        employee.report();
-        employee.report(2);
-    }
-
-
-	}
+	}	
+}
