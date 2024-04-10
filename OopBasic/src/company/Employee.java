@@ -3,12 +3,12 @@ package company;
 public class Employee {
 //フィールド（属性）を定義する変数の宣言
 	protected String name;
-	private final String department;
+	private final Department department;
 	private final String position;
 	private final int employeeId;
 	
 //コンストラクター　クラスのインスタンスを作成するさいに呼び出されるメソッド
-public Employee (String name,String department,String position, int employeeId) {
+public Employee (String name,Department department,String position, int employeeId) {
 	this.name=name;
 	this.department=department;
 	this.position=position;
@@ -36,6 +36,6 @@ public void report (int times) {
     }
 }
 
-
+	
 
 
