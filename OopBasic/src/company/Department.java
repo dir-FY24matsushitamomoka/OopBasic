@@ -32,7 +32,6 @@ public class Department {
 	    	if(budget<0) {
 	    		throw new IllegalArgumentException("予算はマイナスにできません");
 	    	}
-	    	 this.budget = budget;
 	    	
 	    }
 }
