@@ -1,9 +1,9 @@
-package company;
+package company;  //基底クラス (抽象クラス)
 
-public class Employee {
+public abstract class Employee implements Woekable {
 //フィールド（属性）を定義する変数の宣言
 	protected String name;
-	private final Department department;
+	protected final Department department;
 	private final String position;
 	private final int employeeId;
 	
@@ -27,13 +27,18 @@ public void report (int times) {
 	public void report() {
 		report(1);
 	}
+	//reportメソッドを呼び出して１を代入
 	//int times=1
 	
-	 // 会議に参加するメソッド
-    public void joinMeeting() {
-        department.meeting();
-        System.out.println("→上記の会議に参加します。部署：" + department.getName() + "名前：" + name);
+	 // 会議に参加する抽象メソッド
+    public abstract void joinMeeting();
+    
+    // インターフェースで定義したwork()メソッドを実装
+    @Override
+    public void work() {
+        System.out.println("正社員として働きます。名前：" + name + slogan);
     }
+    
 }
 
 	

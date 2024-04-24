@@ -30,7 +30,7 @@ public class Department {
 	// budgetのsetter
 	    public void setBudget(int budget) {
 	    	if(budget<0) {
-	    		throw new IllegalAccessException("予算はマイナスにできません");
+	    		throw newIllegalAccessException("予算はマイナスにできません");
 	    	}
 	   this.budget=budget;
 	    	
